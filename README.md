@@ -13,4 +13,4 @@ Christmas Coin is a new digital currency that has the purpose to donate to Chris
 ---
 + [WhitePaper]
 ---
-+ [Contact](mailto:santa@christmas-coin.net)
++ [Contact E-Mail](mailto:santa@christmas-coin.net)
