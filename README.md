@@ -1,0 +1,2 @@
+# Christmascoin-Core
+Christmascoin-Core
