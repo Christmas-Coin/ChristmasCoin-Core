@@ -9,8 +9,8 @@ Christmas Coin is a new digital currency that has the purpose to donate to Chris
 + [Twitter](https://twitter.com/christmas_coin)
 ---
 + [BlockExplorer](http://explorer.christmas-coin.net)
-+ [Masternode Setup Guide]
++ [Masternode Setup Guide](https://christmas-coin.github.io/Masternode-Setup/)
 ---
-+ [WhitePaper]
++ [WhitePaper](https://christmas-coin.net/docs/Whitepaper_EN.pdf)
 ---
 + [Contact E-Mail](mailto:santa@christmas-coin.net)
