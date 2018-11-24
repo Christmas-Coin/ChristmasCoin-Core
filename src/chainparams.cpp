@@ -141,7 +141,7 @@ public:
          *     CTxOut(nValue=50.00000000, scriptPubKey=0xA9037BAC7050C479B121CF)
          *   vMerkleTree: e0028e
          */
-        const char* pszTimestamp = "Cato coin for life 6/10/2018";
+        const char* pszTimestamp = "Merry Xmas!";
         CMutableTransaction txNew;
         txNew.vin.resize(1);
         txNew.vout.resize(1);
@@ -152,42 +152,20 @@ public:
         genesis.hashPrevBlock = 0;
         genesis.hashMerkleRoot = genesis.BuildMerkleTree();
         genesis.nVersion = 1;
-        genesis.nTime = 1529609829;  // Thursday, Saturday, May 5, 2018 8:17:00 PM GNT
+        genesis.nTime = 1542885761;
         genesis.nBits = 0x1e0ffff0;
-        genesis.nNonce = 93400;
-	/*
-        printf("Generating genesis block...\n");
+        genesis.nNonce = 599653;
+	
 
-        uint32_t nounce = 1;
-		while(1) {
-            //printf("Nounce: %d\n", nounce);
-			genesis.nNonce = nounce;
 
-			hashGenesisBlock = genesis.GetHash();
-			
-			if(hashGenesisBlock.GetHex() < std::string("0000ffffff000000000000000000000000000000000000000000000000000000")) {
-			//if(hashGenesisBlock.GetHex() < bnProofOfWorkLimit.GetHex()) {
-			//if(consensus.hashGenesisBlock.GetHex() < std::string("0000082da923a04678394f873852c7f08b777af30224b6e23296f586370e80ae")) {
-				printf("nounce: %x\n",nounce);
-				break;
-			} else {
-				if( nounce % 10000 == 0)
-					printf("nounce: %x, hash: %s, merklehash:%s\n",nounce, hashGenesisBlock.GetHex().c_str(),genesis.hashMerkleRoot.ToString().c_str());
-				++nounce;
-			}
-		} 
-		
-        printf("genesis: %s\n",hashGenesisBlock.GetHex().c_str());
-        printf("merklehash: %s\n",genesis.hashMerkleRoot.ToString().c_str());
-			*/
         hashGenesisBlock = genesis.GetHash();
-        assert(hashGenesisBlock == uint256("00004721b5eef2bab524c9614c2af96b2eda9b3c596e52696ce77ef2ac36284e"));
-        assert(genesis.hashMerkleRoot == uint256("c78c488441f21e66e7dbecd53a3675231cfdd138573e22164bef0d4235d33902"));
+        assert(hashGenesisBlock == uint256("000009ead53c32b16bf062c099813aac3788e94f4fa65f9d8ba6f4e7dbd27a28"));
+        assert(genesis.hashMerkleRoot == uint256("91ceb6603e8a43f1ff65c58ca3e4077858eef2177e7c68ff8ffb24022f75c8ac"));
 
-       vSeeds.push_back(CDNSSeedData("108.61.156.13", "108.61.156.13"));
-       vSeeds.push_back(CDNSSeedData("140.82.48.84", "140.82.48.84"));
-       vSeeds.push_back(CDNSSeedData("45.63.6.241", "45.63.6.241"));
-       vSeeds.push_back(CDNSSeedData("207.148.14.115", "207.148.14.115"));
+       vSeeds.push_back(CDNSSeedData("explorer.christmas-coin.net", "explorer.christmas-coin.net"));
+       vSeeds.push_back(CDNSSeedData("seed1.christmas-coin.net", "seed1.christmas-coin.net"));
+       vSeeds.push_back(CDNSSeedData("seed2.christmas-coin.net", "seed2.christmas-coin.net"));
+       vSeeds.push_back(CDNSSeedData("seed3.christmas-coin.net", "seed3.christmas-coin.net"));
 		base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 28);
 		base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 4);
 		base58Prefixes[SECRET_KEY] = std::vector<unsigned char>(1, 28+128);
