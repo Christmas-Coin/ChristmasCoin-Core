@@ -2155,10 +2155,10 @@ int64_t GetBlockValue(int nHeight)
 	else if (nHeight <= 400 && nHeight > 0) { //Premine phase 200,000 coins in this phase 4k coins each block for 50 blocks
 		nSubsidy = 500 * COIN;
 	}
-	else if (nHeight <= 12000 && nHeight > 400) {
+	else if (nHeight <= 1440 && nHeight > 400) {
 		nSubsidy = 1 * COIN;
 	}
-	else if (nHeight <= 20430 && nHeight > 12000) {
+	else if (nHeight <= 20430 && nHeight > 1440) {
 		nSubsidy = 4 * COIN;
 	}
 	else if (nHeight <= 21841 && nHeight > 20430) {
@@ -2237,10 +2237,10 @@ int64_t GetMasternodePayment(int nHeight, int64_t blockValue, int nMasternodeCou
 	int64_t ret = 0;
 if(nHeight<401) {
 ret = 0;
-} else if (nHeight <= 12000 && nHeight > 400) {
+} else if (nHeight <= 1440 && nHeight > 400) {
 ret = blockValue * 0.7;
 	}
-	else if (nHeight <= 20430 && nHeight > 12000) {
+	else if (nHeight <= 20430 && nHeight > 1440) {
 ret = blockValue * 0.7;
 	}
 	else if (nHeight <= 21841 && nHeight > 20430) {
